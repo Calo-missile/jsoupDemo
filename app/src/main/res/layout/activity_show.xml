@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.hsc.jsoupdemo.ShowActivity">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_show_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        app:titleTextColor="#fff"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="标题"
+        android:background="?attr/colorPrimary">
+        
+    </android.support.v7.widget.Toolbar>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <WebView
+            android:id="@+id/wb_show_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+        </WebView>
+        
+        <ProgressBar
+            android:id="@+id/pb_show_activity"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>
